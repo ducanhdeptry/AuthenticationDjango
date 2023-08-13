@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block section %}
+{% if user.is_authenticated %}
+    <h1>{{user.username}}</h1>
+    <h1>{{user.email}}</h1>
+{% else %}
+    <h1>You haven't login yet</h1>
+    <div class="form-group" id="signup-button">
+        <button class="btn btn-outline-dark mb-4" style="margin-top: 20px;">Login</button>
+    </div>
+    <div class="form-group">
+        <small class="text-muted ml-3" >Don't have an account yet? <a href="/register/">Sign up</a></small>
+    </div>
+{% endif %}
+{% endblock %}
