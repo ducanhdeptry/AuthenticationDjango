@@ -5,6 +5,8 @@
   font-family: "Open Sans", sans-serif;
 }
 
+
+
 body {
   height: 100vh;
   background-color: #000;
@@ -132,7 +134,10 @@ section#hero {
   text-align: center;
   color: #fff;
 }
-
+section#home {
+  background-color: #fff;
+  padding-top: 40px;
+}
 #hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
